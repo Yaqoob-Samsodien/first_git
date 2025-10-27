@@ -1,0 +1,142 @@
+body {
+  background-color: #3847529a;
+  color: aliceblue;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: aquamarine;
+  border-radius: 400px;
+  color: #000000;
+  padding: 10px;
+}
+
+.card-container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  color: #36454F;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  width: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  max-width: 200px; 
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003702;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+nav { align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content:center;
+    top: 40;
+    gap: 200px;
+    position: sticky;
+    background-color: #333;
+    border: radius 120px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav ul li{
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: rgb(255, 30, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.search-container {
+            max-width: 2500px;
+            margin: 40px auto 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+.search-container input[type="text"] {
+            flex: 4;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+.search-container input[type="submit"] {
+            flex: 1;
+            padding: 10px;
+            background-color: #3af011;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            max-width: 80px;
+        }
+
+.search-container input[type="submit"]:hover {
+            background-color: hsla(0, 100%, 35%, 0.933);
+        }

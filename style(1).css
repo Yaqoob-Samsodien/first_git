@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+.parent{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    width: 800px;
+    margin: auto 10% ;
+    gap: 10px;
+}
+.child{
+    padding: 15px;
+    width: 300px;
+    position: relative;
+}
+.imageBox{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(21, 63, 74, 0.475);
+}
+.description{
+    width: 91%;
+    height: 0%;
+    position: absolute;
+    transition: 0.7s ease;
+     opacity: 0;
+}
+.imageBox:hover .description{
+    bottom:10%;
+    left: 15px;
+    background-color: rgb(231, 227, 234);
+    opacity: 0.6;
+    height: 70%;
+    color: black;
+}
+img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.parent .child {
+  display: none;
+}
+#all:checked ~ .parent .child {
+    display: block;
+}
+#portrait:checked ~ .parent .child{
+     display: none;
+}
+#portrait:checked ~ .parent .child.portrait{
+     display: block;
+}
+#landscape:checked ~ .parent .child{
+    display: none;
+}
+#landscape:checked ~ .parent .child.landscape{
+    display: block;
+}
+#architecture:checked ~ .parent .child{
+    display: none;
+}
+#architecture:checked ~ .parent .child.architecture{
+    display: block;
+}
+@media screen and (max-width: 768px) and (min-width: 1024px){
+    .parent{
+        grid-template-columns: repeat(2,300px);
+        width: 650px;
+    }
+}
+@media screen and (max-width: 600px){
+    .parent{
+        grid-template-columns: repeat(1,300px);
+        width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
