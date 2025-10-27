@@ -1,6 +1,7 @@
 body{
     margin:0;
     font-family: sans-serif;
+    background-color: darkcyan;
 }
 .parent{
     display: grid;
@@ -9,7 +10,7 @@ body{
     margin: auto 10% ;
     gap: 10px;
 }
-.child{
+.infant{
     padding: 15px;
     width: 300px;
     position: relative;
@@ -41,28 +42,32 @@ img{
     overflow: hidden;
     object-fit: cover;
 }
-.parent .child {
+.tag {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: larger;color: azure;}
+
+
+.parent .infant {
   display: none;
 }
-#all:checked ~ .parent .child {
+#all:checked ~ .parent .infant {
     display: block;
 }
-#portrait:checked ~ .parent .child{
+#portrait:checked ~ .parent .infant{
      display: none;
 }
-#portrait:checked ~ .parent .child.portrait{
+#portrait:checked ~ .parent .infant.portrait{
      display: block;
 }
-#landscape:checked ~ .parent .child{
+#landscape:checked ~ .parent .infant{
     display: none;
 }
-#landscape:checked ~ .parent .child.landscape{
+#landscape:checked ~ .parent .infant.landscape{
     display: block;
 }
-#architecture:checked ~ .parent .child{
+#architecture:checked ~ .parent .infant{
     display: none;
 }
-#architecture:checked ~ .parent .child.architecture{
+#architecture:checked ~ .parent .infant.architecture{
     display: block;
 }
 @media screen and (max-width: 768px) and (min-width: 1024px){
