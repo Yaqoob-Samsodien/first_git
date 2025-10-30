@@ -1,104 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <title>Contact Page</title>
-  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <div class="container">
-    <!-- Header Section -->
-    <header>
-      <h1>Contact Us</h1>
-    </header>
 
-    <!-- Contact Form Section -->
-    <section>
-      <form>
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your full name" required />
+<body class="container-fluid animate__animated animate__fadeInUp">
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Cruise</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="/bootstrap/About.html">About</a>
+            <a class="nav-link" href="/bootstrap/contact.html">Contacts</a>
+            <a class="nav-link" href="/bootstrap/products.html">Products</a>
+          </div>
         </div>
-
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required />
-        </div>
-
-        <div>
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" />
-        </div>
-
-        <div>
-          <label for="subject">Subject</label>
-          <select id="subject" name="subject" required>
-            <option value="" disabled selected>Select a subject</option>
-            <option value="general">General Inquiry</option>
-            <option value="support">Support</option>
-            <option value="sales">Sales</option>
-            <option value="feedback">Feedback</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-        </div>
-
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <!-- Schedule Table Section -->
-    <section>
-      <h2>Available Appointment Times</h2>
-      <div class="schedule-table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Day</th>
-              <th>Time Slot 1</th>
-              <th>Time Slot 2</th>
-              <th>Time Slot 3</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Monday</td>
-              <td>9:00 AM - 10:00 AM</td>
-              <td>11:00 AM - 12:00 PM</td>
-              <td>2:00 PM - 3:00 PM</td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>10:00 AM - 11:00 AM</td>
-              <td>1:00 PM - 2:00 PM</td>
-              <td>3:00 PM - 4:00 PM</td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>9:30 AM - 10:30 AM</td>
-              <td>12:00 PM - 1:00 PM</td>
-              <td>2:30 PM - 3:30 PM</td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td>8:00 AM - 9:00 AM</td>
-              <td>11:30 AM - 12:30 PM</td>
-              <td>3:30 PM - 4:30 PM</td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>9:00 AM - 10:00 AM</td>
-              <td>1:30 PM - 2:30 PM</td>
-              <td>4:00 PM - 5:00 PM</td>
-            </tr>
-          </tbody>
-        </table>
       </div>
-    </section>
-  </div>
+    </nav>
+
+    <form>
+      <div class="mb-3">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" required placeholder="First name" />
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" required placeholder="Last name" />
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Samsodien's Motorsport. All Rights Reserved.</p>
+    </div>
+
+
+</div>
 </body>
+<footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </html>
